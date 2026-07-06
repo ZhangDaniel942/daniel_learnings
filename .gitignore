@@ -129,7 +129,7 @@ test-output/
 # ---------- 文档生成 ----------
 docs/_build/
 # 要这个
-#site/
+site/
 
 # ---------- 其他常见 ----------
 *.bak
@@ -259,3 +259,4 @@ dataset_dict.json
 
 
 
+/site/

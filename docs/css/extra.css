@@ -110,6 +110,22 @@
   font-size: .85em;
 }
 
+/* === Count badge: post count after blog categories & tags === */
+.md-count-badge {
+  display: inline-block;
+  min-width: 1.4em;
+  padding: .05em .5em;
+  margin-left: .5em;
+  font-size: .72em;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--md-primary-bg-color);
+  background-color: var(--md-primary-fg-color);
+  border-radius: 999px;
+  opacity: .8;
+}
+
 /* === Page views (busuanzi) === */
 .md-page-views {
   margin: 1.5em 0;

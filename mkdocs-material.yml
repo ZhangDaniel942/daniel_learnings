@@ -79,6 +79,7 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - js/mathjax.js
   - js/tasks.js
+  - js/counts.js
   - https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 
 plugins:
@@ -116,9 +117,5 @@ nav:
 
   - Blog:
       - 全部: blog/index.md
-      - LLM: blog/category/llm.md
-      - RL: blog/category/rl.md
-      - PyTorch: blog/category/pytorch.md
-      - 随笔: blog/category/随笔.md
 
   - 标签: tags.md
