@@ -7,6 +7,11 @@ on:
       - docs/**
       - overrides/**
       - mkdocs.yml
+      - mkdocs-material.yml
+      - mkdocs-classic.yml
+      - mkdocs-readthedocs.yml
+      - docs/css/**
+      - docs/js/**
       - .github/workflows/deploy.yml
   workflow_dispatch:
 
