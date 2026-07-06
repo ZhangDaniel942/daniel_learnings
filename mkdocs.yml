@@ -4,8 +4,8 @@ site_url: https://username.github.io/notes/
 
 docs_dir: docs
 
-repo_name: username/notes
-repo_url: https://github.com/username/notes
+repo_name: Daniel学习笔记
+repo_url: https://github.com/ZhangDaniel942
 
 theme:
   name: material
