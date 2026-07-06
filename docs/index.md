@@ -37,7 +37,7 @@ AI / Machine Learning Enthusiast  & Big Data Engineer
 
 ## 📫 Contact
 
-- GitHub: 
+- GitHub: https://github.com/ZhangDaniel942
 - Email: ivanl001@163.com
 - Blog: 
 

@@ -1,4 +1,4 @@
-site_name: Daniel's Learning Notebook
+site_name: Daniel's Book
 site_description: AI / LLM / RL / PyTorch Notes
 site_url: https://username.github.io/notes/
 
@@ -12,8 +12,8 @@ theme:
   name: material
   custom_dir: overrides
   language: zh
+  logo: logo.svg
   icon:
-    logo: material/school
     repo: fontawesome/brands/github
   font:
     text: Noto Sans SC
@@ -76,7 +76,7 @@ extra_css:
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - javascripts/mathjax.js
+  - js/mathjax.js
   - https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 
 plugins:

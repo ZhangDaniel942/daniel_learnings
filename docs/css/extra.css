@@ -223,3 +223,24 @@
   font-weight: 700;
   opacity: 1;
 }
+
+
+/* === Tighten header → tabs → content spacing === */
+.md-header__inner {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.md-header__button {
+  margin: .15rem;
+  padding: .35rem;
+}
+.md-tabs__item {
+  height: 1.8rem;
+}
+
+.md-tabs{
+  line-height: 0;
+}
+.md-main__inner {
+  margin-top: .5rem;
+}

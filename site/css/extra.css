@@ -207,13 +207,13 @@
 /* Blog section direct leaves: 全部 / LLM / RL / PyTorch / 随笔 */
 .md-nav--primary nav[data-md-level="1"]:has(.md-nav__item--nested)
   > .md-nav__list > .md-nav__item > a.md-nav__link {
-  padding-left: 1.6em;
+  padding-left: 0.8em;
   font-size: .8rem;
 }
 /* sub-items under 归档 / 分类 (level 2 only exists in Blog) */
 .md-nav--primary nav[data-md-level="2"] .md-nav__list > .md-nav__item > a.md-nav__link,
 .md-nav--primary nav[data-md-level="3"] .md-nav__list > .md-nav__item > a.md-nav__link {
-  padding-left: 1.2em;
+  padding-left: 0.8em;
   font-size: .75rem;
   opacity: .9;
 }
@@ -222,4 +222,25 @@
 .md-nav--primary .md-nav__item--section > label.md-nav__link {
   font-weight: 700;
   opacity: 1;
+}
+
+
+/* === Tighten header → tabs → content spacing === */
+.md-header__inner {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.md-header__button {
+  margin: .15rem;
+  padding: .35rem;
+}
+.md-tabs__item {
+  height: 1.8rem;
+}
+
+.md-tabs{
+  line-height: 0;
+}
+.md-main__inner {
+  margin-top: .5rem;
 }
