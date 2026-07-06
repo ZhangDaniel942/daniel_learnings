@@ -1,6 +1,6 @@
 (function () {
   var CACHE_KEY = 'md-blog-counts-v3';
-  var TTL = 6 * 60 * 60 * 1000;
+  var TTL = 5 * 60 * 1000;
 
   function scopeHref() {
     try { return window.__md_scope ? window.__md_scope.href : location.href; }
@@ -91,25 +91,58 @@
     return { categories: categories, archives: archives, total: total };
   }
 
+  function sameCounts(a, b) {
+    if (!a || !b) return false;
+    if (a.total !== b.total) return false;
+    var ak = Object.keys(a.categories || {}), bk = Object.keys(b.categories || {});
+    if (ak.length !== bk.length) return false;
+    for (var i = 0; i < ak.length; i++) if (a.categories[ak[i]] !== b.categories[ak[i]]) return false;
+    ak = Object.keys(a.archives || {}); bk = Object.keys(b.archives || {});
+    if (ak.length !== bk.length) return false;
+    for (var j = 0; j < ak.length; j++) if (a.archives[ak[j]] !== b.archives[ak[j]]) return false;
+    return true;
+  }
+
+  function fetchCounts() {
+    return fetch(blogIndexUrl(), { credentials: 'same-origin' })
+      .then(function (r) { return r.ok ? r.text() : ''; })
+      .then(function (html) {
+        if (!html) return null;
+        return parseCounts(html);
+      })
+      .catch(function () { return null; });
+  }
+
   function loadCounts() {
     var cached;
     try {
       cached = JSON.parse(localStorage.getItem(CACHE_KEY) || 'null');
     } catch (e) { cached = null; }
     var now = Date.now();
-    if (cached && cached.ts && (now - cached.ts) < TTL && cached.data) {
+    var hasFreshCache = cached && cached.ts && (now - cached.ts) < TTL && cached.data;
+
+    if (hasFreshCache) {
+      // 先用缓存渲染，但后台再 fetch 一次校验，发现不一致就刷新
+      fetchCounts().then(function (fresh) {
+        if (!fresh) return;
+        if (!sameCounts(cached.data, fresh)) {
+          try { localStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), data: fresh })); }
+          catch (e) {}
+          applyCounts(fresh);
+        } else {
+          try { localStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), data: cached.data })); }
+          catch (e) {}
+        }
+      });
       return Promise.resolve(cached.data);
     }
-    return fetch(blogIndexUrl(), { credentials: 'same-origin' })
-      .then(function (r) { return r.ok ? r.text() : ''; })
-      .then(function (html) {
-        if (!html) return { categories: {}, archives: {}, total: 0 };
-        var data = parseCounts(html);
-        try { localStorage.setItem(CACHE_KEY, JSON.stringify({ ts: now, data: data })); }
-        catch (e) {}
-        return data;
-      })
-      .catch(function () { return { categories: {}, archives: {}, total: 0 }; });
+
+    return fetchCounts().then(function (data) {
+      if (!data) return { categories: {}, archives: {}, total: 0 };
+      try { localStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), data: data })); }
+      catch (e) {}
+      return data;
+    });
   }
 
   function countTagPosts() {

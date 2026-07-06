@@ -8,9 +8,9 @@ on:
       - overrides/**
       - mkdocs.yml
       - mkdocs-material.yml
-      - mkdocs-classic.yml
-      - mkdocs-readthedocs.yml
-      - ../../docs/acode/css/**
+      - ../../bak/mkdocs-classic.yml
+      - ../../bak/mkdocs-readthedocs.yml
+      - docs/a00_acode/**
       - ../../docs/demo/js/**
       - .github/workflows/deploy.yml
   workflow_dispatch:

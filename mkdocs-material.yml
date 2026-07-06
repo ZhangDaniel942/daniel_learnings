@@ -12,8 +12,8 @@ theme:
   name: material
   custom_dir: overrides
   language: zh
-  logo: aresource/logo.svg
-  favicon: aresource/favicon.svg
+  logo: a00_aresource/logo.svg
+  favicon: a00_aresource/favicon.svg
   icon:
     repo: fontawesome/brands/github
   font:
@@ -73,13 +73,13 @@ markdown_extensions:
       generic: true
 
 extra_css:
-  - acode/css/extra.css
+  - a00_acode/css/extra.css
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - acode/js/mathjax.js
-  - acode/js/tasks.js
-  - acode/js/counts.js
+  - a00_acode/js/mathjax.js
+  - a00_acode/js/tasks.js
+  - a00_acode/js/counts.js
   - https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 
 plugins:
@@ -95,29 +95,22 @@ plugins:
       archive_url_date_format: yyyy-MM
 
 nav:
-  - 首页: index.md
+  - todo :
+      - todo/index.md
+
+  - 学习 :
+    - ML笔记:
+      - ai_learning_log/reinforce_learning/day01_MDP及策略梯度.md
+    - LLM笔记:
+      - ai_learning_log/reinforce_learning/day01_MDP及策略梯度.md
+    - RL笔记:
+      - ai_learning_log/reinforce_learning/day01_MDP及策略梯度.md
+
+
+  - 作者: profile/index.md
+
 
   - Blog:
       - 全部: blog/index.md
 
-  - Demo:
-      - 渲染效果演示: demo/rendering.md
-
-
-#  - LLM:
-#      - Token 与 Embedding: llm/basics.md
-#      - Transformer 与 Attention: llm/transformer.md
-#      - 对齐 SFT/RLHF/DPO: llm/alignment.md
-#
-#  - RL:
-#      - Policy Gradient: rl/policy-gradient.md
-#      - Actor-Critic 与 GAE: rl/actor-critic.md
-#      - PPO: rl/ppo.md
-#      - DQN: rl/dqn.md
-#
-#  - PyTorch:
-#      - Autograd: pytorch/autograd.md
-#      - 训练循环: pytorch/train-loop.md
-#
-
-  - 标签: tags.md
+  - Tags: tags.md

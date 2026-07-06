@@ -39,7 +39,7 @@ AI / Machine Learning Enthusiast  & Big Data Engineer
 
 - GitHub: https://github.com/ZhangDaniel942
 - Email: ivanl001@163.com
-- Blog: 
+- Blog: https://zhangdaniel942.github.io/daniel_learnings/
 
 ---
 
