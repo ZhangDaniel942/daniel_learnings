@@ -1,0 +1,95 @@
+site_name: Daniel's Learning Notebook
+site_description: AI / LLM / RL / PyTorch Notes
+site_url: https://username.github.io/notes/
+
+docs_dir: docs
+
+repo_name: Daniel学习笔记
+repo_url: https://github.com/ZhangDaniel942
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - def_list
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_css:
+  - css/extra.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/mathjax.js
+  - https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md
+  - blog:
+      blog_dir: blog
+      post_dir: blog/posts
+      post_date_format: yyyy-MM-dd
+
+nav:
+  - 首页: index.md
+
+  - Demo:
+      - 渲染效果演示: demo/rendering.md
+
+  - LLM:
+      - Token 与 Embedding: llm/basics.md
+      - Transformer 与 Attention: llm/transformer.md
+      - 对齐 SFT/RLHF/DPO: llm/alignment.md
+
+  - RL:
+      - Policy Gradient: rl/policy-gradient.md
+      - Actor-Critic 与 GAE: rl/actor-critic.md
+      - PPO: rl/ppo.md
+      - DQN: rl/dqn.md
+
+  - PyTorch:
+      - Autograd: pytorch/autograd.md
+      - 训练循环: pytorch/train-loop.md
+
+  - Blog: blog/index.md
+
+  - 标签: tags.md
