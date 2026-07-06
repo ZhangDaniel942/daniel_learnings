@@ -1,0 +1,261 @@
+# ---------- 系统 / 操作系统 / OS generated files ----------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---------- IDE / 编辑器 ----------
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+*.swp
+*.swo
+*~
+.pydevproject
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+*.manifest
+
+# ---------- Node / 前端 ----------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm
+.yarn-integrity
+.pnp.*
+.next/
+.nuxt/
+.output/
+.parcel-cache/
+.vite/
+*.tsbuildinfo
+
+# ---------- 环境 / 密钥 ----------
+a02_ai/.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+*.secret
+config.local.*
+.local
+
+# ---------- 日志 / 临时 / 缓存 ----------
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.temp
+.cache/
+*.cache
+
+# ---------- 调试 / 本地输出 ----------
+panel_debug.txt
+*.debug
+debug/
+*.local
+
+# ---------- 构建 / 打包 ----------
+*.tar
+*.tar.gz
+*.zip
+*.rar
+*.7z
+*.dmg
+*.exe
+*.msi
+
+# ---------- 测试 / 覆盖率 ----------
+coverage/
+*.cover
+.hypothesis/
+junit/
+test-results/
+playwright-report/
+playwright/.cache/
+test-output/
+
+# ---------- 文档生成 ----------
+docs/_build/
+# 要这个
+#site/
+
+# ---------- 其他常见 ----------
+*.bak
+*.orig
+*.rej
+.cursorignore
+*.pid
+*.seed
+*.pid.lock
+.grunt
+bower_components/
+*.lcov
+
+
+# ---------- java的忽略内容 -----------
+# Compiled class file
+*.class
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+replay_pid*
+
+# IntelliJ IDEA
+out/
+
+# Eclipse
+bin/
+.metadata/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# VS Code
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
+
+# Sensitive configuration files
+application-*.yml
+application-*.properties
+secrets.properties
+
+# 忽略临时文件
+tmp.*
+*.pkl
+
+# ---------- raw_data中用于训练的语料以及模型等数据 ----------
+# advertising
+advertising.csv
+# comments中的购物评论数据
+online_shopping_10_cats.csv
+# digit-recognizer中的数字识别数据
+train.csv
+# fashion-mnist中的时装训练图片
+fashion-mnist_train.csv
+fashion-mnist_test.csv
+# heart-disease中心脏病训练相关数据
+heart_disease.csv
+# house-price中的房价预测训练数据
+house_prices.csv
+house_prices_cols.txt
+# HundredCV-Chat中的聊天数据
+synthesized_.jsonl
+# peom中的古诗词数据
+poems.txt
+# sgns.weibo.word文件夹中根据weibo语料训练的词向量
+sgns.weibo.word
+
+# 自定义分词词典用的. 没啥保留的意义, 仅测试一下
+user_dict.txt
+
+
+# ---------- 代码中的一些中间结果或者较大模型等 ----------
+# nlp的day02中, 代码保存的词向量的结果
+my_vectors.kv
+word2vec_full.model
+*.parquet
+
+
+# ---------- 训练的时候保存的一些目录 ----------
+vocab/
+model/
+log/
+raw_data/
+models/
+id2word.json
+word2id.json
+*.arrow
+dataset_info.json
+state.json
+dataset_dict.json
+
+
+
+
+
+
+
+

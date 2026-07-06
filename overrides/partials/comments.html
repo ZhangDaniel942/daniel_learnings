@@ -1,0 +1,40 @@
+{#-
+  Custom comments + page views partial.
+  Requires theme.custom_dir = overrides and busuanzi script in extra_javascript.
+  Replace GISCUS_REPO / GISCUS_REPO_ID / GISCUS_CATEGORY_ID with your own
+  (generate them at https://giscus.app).
+-#}
+
+<!-- Page views (busuanzi) -->
+<div class="md-page-views" align="center">
+  <span class="md-page-views__item">
+    📖 本文阅读 <span id="busuanzi_value_page_pv">—</span> 次
+  </span>
+  <span class="md-page-views__sep">·</span>
+  <span class="md-page-views__item">
+    🏠 全站阅读 <span id="busuanzi_value_site_pv">—</span> 次
+  </span>
+  <span class="md-page-views__sep">·</span>
+  <span class="md-page-views__item">
+    👥 访客 <span id="busuanzi_value_site_uv">—</span> 人
+  </span>
+</div>
+
+<!-- Comments (giscus) -->
+<h2 id="__comments">评论</h2>
+<script src="https://giscus.app/client.js"
+        data-repo="username/notes"
+        data-repo-id="R_REPO_ID_PLACEHOLDER"
+        data-category="Announcements"
+        data-category-id="DIC_CATEGORY_ID_PLACEHOLDER"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>

@@ -1,0 +1,127 @@
+/* === Blog listing: make each post a clear card === */
+.md-post--excerpt {
+  margin: 1.4em 0;
+  padding: 1.1em 1.4em 1.2em;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-left: 4px solid var(--md-primary-fg-color);
+  border-radius: 8px;
+  background-color: var(--md-default-bg-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: box-shadow .15s ease, transform .15s ease;
+}
+.md-post--excerpt:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+/* Post title in listing: bigger & clearer */
+.md-post--excerpt .md-post__content > h2 {
+  margin: 0 0 .4em;
+  padding-bottom: .25em;
+  border-bottom: 2px solid var(--md-primary-fg-color);
+  font-size: 1.55em;
+  font-weight: 700;
+}
+.md-post--excerpt .md-post__content > h2 a {
+  color: var(--md-primary-fg-color);
+}
+.md-post--excerpt .md-post__content > h2 a:hover {
+  text-decoration: underline;
+}
+
+/* Meta (date / category) as chips */
+.md-post--excerpt .md-meta {
+  font-size: .72em;
+  opacity: .85;
+}
+
+/* === Content heading hierarchy === */
+.md-typeset h1 {
+  font-weight: 800;
+  border-bottom: 3px solid var(--md-primary-fg-color);
+  padding-bottom: .3em;
+  margin: 0 0 .8em;
+}
+.md-typeset h2 {
+  font-weight: 700;
+  margin-top: 1.8em;
+  padding-bottom: .2em;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+.md-typeset h3 {
+  font-weight: 600;
+  color: var(--md-default-fg-color--light);
+  margin-top: 1.4em;
+}
+
+/* === Admonition: stronger title bar === */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 6px;
+  margin: 1.2em 0;
+}
+.md-typeset .admonition-title,
+.md-typeset summary {
+  font-weight: 700;
+  font-size: .85em;
+}
+
+/* === Code blocks: lighter background contrast === */
+.md-typeset code {
+  border-radius: 3px;
+  padding: .1em .35em;
+}
+.md-typeset pre {
+  border-radius: 6px;
+}
+
+/* === Tables: clearer header === */
+.md-typeset table:not([class]) th {
+  background-color: var(--md-default-fg-color--lightest);
+  font-weight: 700;
+}
+
+
+/* === Tags index: one clean row per tag === */
+.md-typeset h2[id^="tag:"] {
+  display: block;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 1.1em 0 .3em;
+  padding: 0;
+  border: none;
+  border-left: 3px solid var(--md-primary-fg-color);
+  padding-left: .6em;
+}
+.md-typeset h2[id^="tag:"] .headerlink {
+  display: none;
+}
+.md-typeset h2[id^="tag:"] + ul {
+  margin: 0 0 .2em 1.1em;
+  padding-left: 1em;
+}
+.md-typeset h2[id^="tag:"] + ul li {
+  margin: .15em 0;
+}
+/* the tag chip itself */
+.md-typeset h2[id^="tag:"] .md-tag {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  border-radius: 999px;
+  padding: .15em .8em;
+  font-size: .85em;
+}
+
+/* === Page views (busuanzi) === */
+.md-page-views {
+  margin: 1.5em 0;
+  padding: .6em 1em;
+  font-size: .8em;
+  color: var(--md-default-fg-color--light);
+  background-color: var(--md-default-fg-color--lightest);
+  border-radius: 6px;
+}
+.md-page-views__sep {
+  margin: 0 .6em;
+  opacity: .5;
+}
