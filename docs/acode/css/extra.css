@@ -182,7 +182,7 @@
   margin: 2em 0;
 }
 
-/* === Inline code: pill style === */
+/* === Inline acode: pill style === */
 .md-typeset :not(pre) > code {
   background-color: var(--md-default-fg-color--lightest);
   border: 1px solid var(--md-default-fg-color--lighter);

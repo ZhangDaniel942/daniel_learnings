@@ -10,8 +10,8 @@ on:
       - mkdocs-material.yml
       - mkdocs-classic.yml
       - mkdocs-readthedocs.yml
-      - docs/css/**
-      - docs/js/**
+      - ../../docs/acode/css/**
+      - ../../docs/demo/js/**
       - .github/workflows/deploy.yml
   workflow_dispatch:
 
