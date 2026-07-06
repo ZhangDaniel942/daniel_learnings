@@ -22,9 +22,7 @@
   font-size: 1.55em;
   font-weight: 700;
 }
-.md-post--excerpt .md-post__content > h2 a {
-  color: var(--md-primary-fg-color);
-}
+
 .md-post--excerpt .md-post__content > h2 a:hover {
   text-decoration: underline;
 }
@@ -172,7 +170,7 @@
 .md-typeset :not(pre) > code {
   background-color: var(--md-default-fg-color--lightest);
   border: 1px solid var(--md-default-fg-color--lighter);
-  color: var(--md-primary-fg-color);
+  color: var(--md-code-fg-color, var(--md-default-fg-color));
 }
 
 /* === Keyboard keys === */
@@ -244,3 +242,4 @@
 .md-main__inner {
   margin-top: .5rem;
 }
+

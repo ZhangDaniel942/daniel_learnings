@@ -1,6 +1,6 @@
 site_name: Daniel's Book
 site_description: AI / LLM / RL / PyTorch Notes
-site_url: https://username.github.io/notes/
+site_url: https://zhangdaniel942.github.io/daniel_learnings/
 
 docs_dir: docs
 
@@ -12,7 +12,8 @@ theme:
   name: material
   custom_dir: overrides
   language: zh
-  logo: logo.svg
+  logo: logo.svg.bak
+  favicon: favicon.svg
   icon:
     repo: fontawesome/brands/github
   font:
@@ -38,15 +39,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: deep purple
-      accent: amber
+      primary: white
+      accent: white
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: deep purple
-      accent: amber
+      primary: black
+      accent: black
       toggle:
         icon: material/weather-night
         name: Switch to light mode
@@ -77,6 +78,7 @@ extra_css:
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - js/mathjax.js
+  - js/tasks.js
   - https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 
 plugins:
@@ -87,6 +89,9 @@ plugins:
       blog_dir: blog
       post_dir: blog/posts
       post_date_format: yyyy-MM-dd
+      archive: true
+      archive_date_format: yyyy-MM
+      archive_url_date_format: yyyy-MM
 
 nav:
   - 首页: index.md

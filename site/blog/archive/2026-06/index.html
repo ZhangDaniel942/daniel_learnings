@@ -10,31 +10,31 @@
       
       
       
-        <link rel="canonical" href="https://zhangdaniel942.github.io/daniel_learnings/rl/actor-critic/">
+        <link rel="canonical" href="https://zhangdaniel942.github.io/daniel_learnings/blog/archive/2026-06/">
       
       
-        <link rel="prev" href="../policy-gradient/">
+        <link rel="prev" href="../2026-07/">
       
       
-        <link rel="next" href="../ppo/">
+        <link rel="next" href="../../../tags/">
       
       
         
       
       
-      <link rel="icon" href="../../favicon.svg">
+      <link rel="icon" href="../../../favicon.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Actor-Critic 与 GAE - Daniel's Book</title>
+        <title>2026-06 - Daniel's Book</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,9 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="../../css/extra.css">
+      <link rel="stylesheet" href="../../../css/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#rlactor-critic-gae" class="md-skip">
+        <a href="#2026-06" class="md-skip">
           跳转至
         </a>
       
@@ -94,9 +94,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../.." title="Daniel&#39;s Book" class="md-header__button md-logo" aria-label="Daniel's Book" data-md-component="logo">
+    <a href="../../.." title="Daniel&#39;s Book" class="md-header__button md-logo" aria-label="Daniel's Book" data-md-component="logo">
       
-  <img src="../../logo.svg" alt="logo">
+  <img src="../../../logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Actor-Critic 与 GAE
+              2026-06
             
           </span>
         </div>
@@ -229,7 +229,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -250,7 +250,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../demo/rendering/" class="md-tabs__link">
+        <a href="../../../demo/rendering/" class="md-tabs__link">
           
   
   
@@ -270,7 +270,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../llm/basics/" class="md-tabs__link">
+        <a href="../../../llm/basics/" class="md-tabs__link">
           
   
   
@@ -286,13 +286,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../policy-gradient/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../rl/policy-gradient/" class="md-tabs__link">
           
   
   
@@ -312,7 +310,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../pytorch/autograd/" class="md-tabs__link">
+        <a href="../../../pytorch/autograd/" class="md-tabs__link">
           
   
   
@@ -328,11 +326,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../blog/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -350,7 +350,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../tags/" class="md-tabs__link">
+      <a href="../../../tags/" class="md-tabs__link">
         
   
   
@@ -385,9 +385,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Daniel&#39;s Book" class="md-nav__button md-logo" aria-label="Daniel's Book" data-md-component="logo">
+    <a href="../../.." title="Daniel&#39;s Book" class="md-nav__button md-logo" aria-label="Daniel's Book" data-md-component="logo">
       
-  <img src="../../logo.svg" alt="logo">
+  <img src="../../../logo.svg" alt="logo">
 
     </a>
     Daniel's Book
@@ -414,7 +414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -461,7 +461,7 @@
   
   
   
-    <a href="../../demo/rendering/" class="md-nav__link">
+    <a href="../../../demo/rendering/" class="md-nav__link">
       
   
   
@@ -514,7 +514,7 @@
   
   
   
-    <a href="../../llm/basics/" class="md-nav__link">
+    <a href="../../../llm/basics/" class="md-nav__link">
       
   
   
@@ -522,6 +522,112 @@
     
   
     LLM
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../rl/policy-gradient/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RL
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../pytorch/autograd/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PyTorch
   
 
     
@@ -567,17 +673,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
     
   
-    RL
+    Blog
   
 
     
@@ -588,12 +694,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
   
-    RL
+    Blog
   
 
           </label>
@@ -604,16 +710,138 @@
   
   
   
+    
+  
   
     <li class="md-nav__item">
-      <a href="../policy-gradient/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Policy Gradient
+    全部
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/llm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LLM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/rl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/pytorch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PyTorch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/%E9%9A%8F%E7%AC%94/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    随笔
   
 
     
@@ -633,6 +861,99 @@
   
     
   
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6_6" id="__nav_6_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归档
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    归档
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026-07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026-07
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+      
+    
   
   
     <li class="md-nav__item md-nav__item--active">
@@ -643,24 +964,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Actor-Critic 与 GAE
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -668,7 +971,7 @@
   <span class="md-ellipsis">
     
   
-    Actor-Critic 与 GAE
+    2026-06
   
 
     
@@ -678,68 +981,13 @@
 
       </a>
       
-        
+    </li>
+  
 
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-critic" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. 为什么需要 Critic
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-a2c-a3c" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. A2C / A3C 结构
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-gae" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. GAE（广义优势估计）
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-critic" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Critic 损失
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -752,15 +1000,76 @@
   
   
   
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_7" id="__nav_6_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    分类
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    分类
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
     <li class="md-nav__item">
-      <a href="../ppo/" class="md-nav__link">
+      <a href="../../category/llm/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    PPO
+    LLM
   
 
     
@@ -779,16 +1088,108 @@
   
   
   
+    
+  
   
     <li class="md-nav__item">
-      <a href="../dqn/" class="md-nav__link">
+      <a href="../../category/pytorch/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    DQN
+    PyTorch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/rl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    生活记录
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/%E9%9A%8F%E7%AC%94/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    随笔
   
 
     
@@ -808,108 +1209,10 @@
     </li>
   
 
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../pytorch/autograd/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    PyTorch
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../blog/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Blog
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -922,7 +1225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tags/" class="md-nav__link">
+      <a href="../../../tags/" class="md-nav__link">
         
   
   
@@ -962,58 +1265,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-critic" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. 为什么需要 Critic
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-a2c-a3c" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. A2C / A3C 结构
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-gae" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. GAE（广义优势估计）
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-critic" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Critic 损失
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1021,131 +1272,60 @@
             
           
           
-            <div class="md-content" data-md-component="content">
-              
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-
-  
-    <a href="https://github.com/ZhangDaniel942/daniel_learnings/edit/main/docs/rl/actor-critic.md" title="编辑此页" class="md-content__button md-icon" rel="edit">
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        <h1 id="2026-06">2026-06<a class="headerlink" href="#2026-06" title="Permanent link">&para;</a></h1>
+      </header>
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
-    </a>
-  
-  
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
     
-      
-    
-    <a href="https://github.com/ZhangDaniel942/daniel_learnings/raw/main/docs/rl/actor-critic.md" title="查看本页的源代码" class="md-content__button md-icon">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
-    </a>
-  
-
-
-<h1 id="rlactor-critic-gae">RL：Actor-Critic 与 GAE<a class="headerlink" href="#rlactor-critic-gae" title="Permanent link">&para;</a></h1>
-<h2 id="1-critic">1. 为什么需要 Critic<a class="headerlink" href="#1-critic" title="Permanent link">&para;</a></h2>
-<p>REINFORCE 方差大，引入 value function <span class="arithmatex">\(V_\phi(s)\)</span> 作 baseline：</p>
-<div class="arithmatex">\[
-\nabla_\theta J = \mathbb{E}\left[\nabla_\theta\log\pi_\theta(a|s)\,(G_t - V_\phi(s))\right]
-\]</div>
-<p><span class="arithmatex">\(A_t = G_t - V_\phi(s)\)</span> 即 <strong>优势函数</strong>。</p>
-<h2 id="2-a2c-a3c">2. A2C / A3C 结构<a class="headerlink" href="#2-a2c-a3c" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Actor</strong> <span class="arithmatex">\(\pi_\theta(a|s)\)</span>：输出动作分布</li>
-<li><strong>Critic</strong> <span class="arithmatex">\(V_\phi(s)\)</span>：输出状态价值</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">ActorCritic</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
-    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s_dim</span><span class="p">,</span> <span class="n">a_dim</span><span class="p">,</span> <span class="n">h</span><span class="o">=</span><span class="mi">128</span><span class="p">):</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">body</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">s_dim</span><span class="p">,</span> <span class="n">h</span><span class="p">),</span> <span class="n">nn</span><span class="o">.</span><span class="n">Tanh</span><span class="p">(),</span>
-                                  <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">h</span><span class="p">),</span> <span class="n">nn</span><span class="o">.</span><span class="n">Tanh</span><span class="p">())</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">actor</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">a_dim</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">critic</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-
-    <span class="k">def</span><span class="w"> </span><span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">body</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">actor</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">critic</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="3-gae">3. GAE（广义优势估计）<a class="headerlink" href="#3-gae" title="Permanent link">&para;</a></h2>
-<p>用 TD 残差 <span class="arithmatex">\(\delta_t = r_t + \gamma V(s_{t+1}) - V(s_t)\)</span> 指数加权求和：</p>
-<div class="arithmatex">\[
-\hat{A}_t^{\text{GAE}(\gamma,\lambda)} =
-(1-\lambda)\sum_{l=0}^{\infty}\lambda^l \hat{A}_t^{(l+1)}
-\]</div>
-<p>等价形式：</p>
-<div class="arithmatex">\[
-\hat{A}_t = \delta_t + \gamma\lambda\,\hat{A}_{t+1}
-\]</div>
-<table>
-<thead>
-<tr>
-<th><span class="arithmatex">\(\lambda\)</span></th>
-<th>行为</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>退化为 TD(0)，偏差大方差小</td>
-</tr>
-<tr>
-<td>1</td>
-<td>退化为 Monte-Carlo，方差大偏差小</td>
-</tr>
-<tr>
-<td>0.9~0.95</td>
-<td>常用平衡点</td>
-</tr>
-</tbody>
-</table>
-<details class="tip" open="open">
-<summary>GAE 是 PPO 的标配</summary>
-<p>PPO 几乎都用 GAE 估计优势，再配合 clipping 做稳健更新。</p>
-</details>
-<h2 id="4-critic">4. Critic 损失<a class="headerlink" href="#4-critic" title="Permanent link">&para;</a></h2>
-<div class="arithmatex">\[
-\mathcal{L}_{\text{VF}} = \big(V_\phi(s_t) - \hat{R}_t\big)^2
-\]</div>
-<p>其中 <span class="arithmatex">\(\hat{R}_t = \hat{A}_t + V_\phi(s_t)\)</span> 是 return 估计。</p>
-<hr />
-<blockquote>
-<p>下一节：DQN —— 当动作空间离散时的另一条路。</p>
-</blockquote>
-
-
-
-
-
-
-
-
-
-
-
-<!-- Page views (busuanzi) -->
-<div class="md-page-views" align="center">
-  <span class="md-page-views__item">
-    📖 本文阅读 <span id="busuanzi_value_page_pv">—</span> 次
-  </span>
-  <span class="md-page-views__sep">·</span>
-  <span class="md-page-views__item">
-    🏠 全站阅读 <span id="busuanzi_value_site_pv">—</span> 次
-  </span>
-  <span class="md-page-views__sep">·</span>
-  <span class="md-page-views__item">
-    👥 访客 <span id="busuanzi_value_site_uv">—</span> 人
-  </span>
-</div>
-
-<!-- Comments (giscus) - blog posts only -->
-
-                
-              </article>
-            </div>
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2026-06-05 00:00:00+00:00">2026-06-05</time></li>
+        
+          <li class="md-meta__item">
+            分类于
+            
+              <a href="../../category/%E9%9A%8F%E7%AC%94/" class="md-meta__link">随笔</a></li>
+        
+        
           
+          <li class="md-meta__item">
+            
+              需要 1 分钟阅读时间
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="_1"><a class="toclink" href="../../2026/06/05/%E6%97%A5%E6%9C%9F%E6%B5%8B%E8%AF%95/">日期测试</a></h2>
+<h3 id="_2"><a class="toclink" href="../../2026/06/05/%E6%97%A5%E6%9C%9F%E6%B5%8B%E8%AF%95/#_2">你好呀</a></h3>
+    
+    
+  </div>
+</article>
+      
+      
+        
+          
+
+
+
+<nav class="md-pagination">
+  
+</nav>
+        
+      
+    </div>
+  </div>
+
           
   <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
 
@@ -1187,16 +1367,16 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.tracking", "navigation.prune", "navigation.index", "toc.follow", "header.autohide", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.action.edit", "content.action.view", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.tracking", "navigation.prune", "navigation.index", "toc.follow", "header.autohide", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.action.edit", "content.action.view", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
-        <script src="../../js/mathjax.js"></script>
+        <script src="../../../js/mathjax.js"></script>
       
-        <script src="../../js/tasks.js"></script>
+        <script src="../../../js/tasks.js"></script>
       
         <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
       
