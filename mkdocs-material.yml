@@ -5,29 +5,48 @@ site_url: https://username.github.io/notes/
 docs_dir: docs
 
 repo_name: Daniel学习笔记
-repo_url: https://github.com/ZhangDaniel942
+repo_url: https://github.com/ZhangDaniel942/daniel_learnings
+edit_uri: edit/main/docs/
 
 theme:
   name: material
   custom_dir: overrides
   language: zh
+  icon:
+    logo: material/school
+    repo: fontawesome/brands/github
+  font:
+    text: Noto Sans SC
+    code: JetBrains Mono
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.expand
     - navigation.top
+    - navigation.tracking
+    - navigation.prune
+    - navigation.index
+    - toc.follow
+    - header.autohide
     - search.highlight
     - search.share
     - content.code.copy
     - content.code.annotate
+    - content.action.edit
+    - content.action.view
+    - content.tabs.link
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: deep purple
+      accent: amber
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: deep purple
+      accent: amber
       toggle:
         icon: material/weather-night
         name: Switch to light mode
@@ -90,6 +109,11 @@ nav:
       - Autograd: pytorch/autograd.md
       - 训练循环: pytorch/train-loop.md
 
-  - Blog: blog/index.md
+  - Blog:
+      - 全部: blog/index.md
+      - LLM: blog/category/llm.md
+      - RL: blog/category/rl.md
+      - PyTorch: blog/category/pytorch.md
+      - 随笔: blog/category/随笔.md
 
   - 标签: tags.md
