@@ -95,6 +95,8 @@ plugins:
       archive_url_date_format: yyyy-MM
 
 nav:
+  - 作者: index.md
+
   - todo :
       - todo/index.md
 
@@ -106,8 +108,6 @@ nav:
     - RL笔记:
       - ai_learning_log/reinforce_learning/day01_MDP及策略梯度.md
 
-
-  - 作者: profile/index.md
 
 
   - Blog:
